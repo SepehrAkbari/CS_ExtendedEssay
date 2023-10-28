@@ -4,15 +4,13 @@ import java.io.InputStreamReader;
 
 public class ExecutionTimeMeasurement {
     public static void main(String[] args) throws IOException {
-        // Compile and run the first C program
-        String cProgram1 = "splay_tree.c";  // Replace with your C program filename
+        String cProgram1 = "splaytree.c";
         long startTime1 = System.nanoTime();
         executeCProgram(cProgram1);
         long endTime1 = System.nanoTime();
         long executionTime1 = endTime1 - startTime1;
 
-        // Compile and run the second C program
-        String cProgram2 = "balanced_avl_tree.c";  // Replace with your C program filename
+        String cProgram2 = "avltree.c";
         long startTime2 = System.nanoTime();
         executeCProgram(cProgram2);
         long endTime2 = System.nanoTime();
